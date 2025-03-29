@@ -1,0 +1,1 @@
+/home/lera/prometheus_metrics_agent.sh restart

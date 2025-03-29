@@ -1,0 +1,22 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP29",
+                "stepName": "Custom Request: send_message",
+                "infFile": "t1.inf",
+                "time": 1743025252421
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "Send_Message",
+                "rawStartTime": 1743025252266,
+                "rawEndTime": 1743025252575,
+                "thinkTime": 0.0,
+                "wastedTime": 0.07530522346496582
+            }
+        ]
+    }
+]

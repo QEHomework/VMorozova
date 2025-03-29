@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\м\OneDrive\ƒокументы\VuGen\Scripts\UC01_message
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\м\onedrive\документы\vugen\scripts\uc01_message\\logfile.log
+c:\users\м\onedrive\документы\vugen\scripts\uc01_message\\combined_UC01_message.c
+c:\users\м\onedrive\документы\vugen\scripts\uc01_message\\pre_cci.c

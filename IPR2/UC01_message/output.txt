@@ -1,0 +1,963 @@
+Virtual User Script started at: 27.03.2025 0:40:36
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2021.0.0 for Windows 10; build 430 (янв 05 2021 19:27:22)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\м\OneDrive\Документы\VuGen\Scripts\UC01_message\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(19): clientId: 16 (as number: 16)
+Action.c(20): message: hi_2
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "1", "message": "hi_2"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3400 Wasted Time: 0.0803).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+Action.c(19): clientId: 4 (as number: 4)
+Action.c(20): message: hi_1
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "4", "message": "hi_1"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2307 Wasted Time: 0.0109).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+Action.c(19): clientId: 13 (as number: 13)
+Action.c(20): message: hi_9
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "20", "message": "hi_9"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2464 Wasted Time: 0.0169).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+Starting action Action.
+Action.c(19): clientId: 8 (as number: 8)
+Action.c(20): message: hi_2
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "9", "message": "hi_2"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2313 Wasted Time: 0.0117).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+Starting action Action.
+Action.c(19): clientId: 6 (as number: 6)
+Action.c(20): message: hi_3
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "10", "message": "hi_3"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2451 Wasted Time: 0.0145).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+Starting action Action.
+Action.c(19): clientId: 7 (as number: 7)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "4", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2475 Wasted Time: 0.0181).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 6.
+Starting iteration 7.
+Starting action Action.
+Action.c(19): clientId: 16 (as number: 16)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "5", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2318 Wasted Time: 0.0201).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 7.
+Starting iteration 8.
+Starting action Action.
+Action.c(19): clientId: 8 (as number: 8)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "10", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2455 Wasted Time: 0,0223).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 8.
+Starting iteration 9.
+Starting action Action.
+Action.c(19): clientId: 14 (as number: 14)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "16", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2607 Wasted Time: 0,0250).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 9.
+Starting iteration 10.
+Starting action Action.
+Action.c(19): clientId: 11 (as number: 11)
+Action.c(20): message: hi_9
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "17", "message": "hi_9"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2626 Wasted Time: 0,0270).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 10.
+Starting iteration 11.
+Starting action Action.
+Action.c(19): clientId: 15 (as number: 15)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "2", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2629 Wasted Time: 0.0314).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 11.
+Starting iteration 12.
+Starting action Action.
+Action.c(19): clientId: 13 (as number: 13)
+Action.c(20): message: hi_7
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "5", "message": "hi_7"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2607 Wasted Time: 0,0361).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 12.
+Starting iteration 13.
+Starting action Action.
+Action.c(19): clientId: 14 (as number: 14)
+Action.c(20): message: hi_7
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "2", "message": "hi_7"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2635 Wasted Time: 0,0355).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 13.
+Starting iteration 14.
+Starting action Action.
+Action.c(19): clientId: 15 (as number: 15)
+Action.c(20): message: hi_3
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "18", "message": "hi_3"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2771 Wasted Time: 0.0375).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 14.
+Starting iteration 15.
+Starting action Action.
+Action.c(19): clientId: 10 (as number: 10)
+Action.c(20): message: hi_8
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "3", "message": "hi_8"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2622 Wasted Time: 0.0504).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 15.
+Starting iteration 16.
+Starting action Action.
+Action.c(19): clientId: 7 (as number: 7)
+Action.c(20): message: hi_7
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "5", "message": "hi_7"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2782 Wasted Time: 0,0413).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 16.
+Starting iteration 17.
+Starting action Action.
+Action.c(19): clientId: 2 (as number: 2)
+Action.c(20): message: hi_2
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "17", "message": "hi_2"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2924 Wasted Time: 0.0475).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 17.
+Starting iteration 18.
+Starting action Action.
+Action.c(19): clientId: 7 (as number: 7)
+Action.c(20): message: hi_3
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "4", "message": "hi_3"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2770 Wasted Time: 0,0494).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 18.
+Starting iteration 19.
+Starting action Action.
+Action.c(19): clientId: 1 (as number: 1)
+Action.c(20): message: hi_1
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "8", "message": "hi_1"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2624 Wasted Time: 0.0504).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 19.
+Starting iteration 20.
+Starting action Action.
+Action.c(19): clientId: 5 (as number: 5)
+Action.c(20): message: hi_5
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "10", "message": "hi_5"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2600 Wasted Time: 0.0521).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 20.
+Starting iteration 21.
+Starting action Action.
+Action.c(19): clientId: 13 (as number: 13)
+Action.c(20): message: hi_10
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "8", "message": "hi_10"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2920 Wasted Time: 0.0561).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 21.
+Starting iteration 22.
+Starting action Action.
+Action.c(19): clientId: 17 (as number: 17)
+Action.c(20): message: hi_1
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "18", "message": "hi_1"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2774 Wasted Time: 0.0582).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 22.
+Starting iteration 23.
+Starting action Action.
+Action.c(19): clientId: 11 (as number: 11)
+Action.c(20): message: hi_8
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "14", "message": "hi_8"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2946 Wasted Time: 0.0644).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 23.
+Starting iteration 24.
+Starting action Action.
+Action.c(19): clientId: 12 (as number: 12)
+Action.c(20): message: hi_5
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "8", "message": "hi_5"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2910 Wasted Time: 0.0660).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 24.
+Starting iteration 25.
+Starting action Action.
+Action.c(19): clientId: 17 (as number: 17)
+Action.c(20): message: hi_5
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "2", "message": "hi_5"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2763 Wasted Time: 0.0657).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 25.
+Starting iteration 26.
+Starting action Action.
+Action.c(19): clientId: 2 (as number: 2)
+Action.c(20): message: hi_2
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "1", "message": "hi_2"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.2924 Wasted Time: 0.0672).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 26.
+Starting iteration 27.
+Starting action Action.
+Action.c(19): clientId: 7 (as number: 7)
+Action.c(20): message: hi_9
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "12", "message": "hi_9"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3223 Wasted Time: 0,0847).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 27.
+Starting iteration 28.
+Starting action Action.
+Action.c(19): clientId: 17 (as number: 17)
+Action.c(20): message: hi_4
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "14", "message": "hi_4"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,2914 Wasted Time: 0,0811).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 28.
+Starting iteration 29.
+Starting action Action.
+Action.c(19): clientId: 1 (as number: 1)
+Action.c(20): message: hi_10
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "12", "message": "hi_10"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3092 Wasted Time: 0,0753).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 29.
+Starting iteration 30.
+Starting action Action.
+Action.c(19): clientId: 5 (as number: 5)
+Action.c(20): message: hi_5
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "12", "message": "hi_5"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3052 Wasted Time: 0.0747).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 30.
+Starting iteration 31.
+Starting action Action.
+Action.c(19): clientId: 1 (as number: 1)
+Action.c(20): message: hi_2
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "2", "message": "hi_2"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3079 Wasted Time: 0,0823).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 31.
+Starting iteration 32.
+Starting action Action.
+Action.c(19): clientId: 20 (as number: 20)
+Action.c(20): message: hi_8
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "17", "message": "hi_8"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3034 Wasted Time: 0.0878).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 32.
+Starting iteration 33.
+Starting action Action.
+Action.c(19): clientId: 15 (as number: 15)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "16", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3082 Wasted Time: 0.0873).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 33.
+Starting iteration 34.
+Starting action Action.
+Action.c(19): clientId: 14 (as number: 14)
+Action.c(20): message: hi_1
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "20", "message": "hi_1"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3072 Wasted Time: 0.0925).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 34.
+Starting iteration 35.
+Starting action Action.
+Action.c(19): clientId: 7 (as number: 7)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "19", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3222 Wasted Time: 0.0935).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 35.
+Starting iteration 36.
+Starting action Action.
+Action.c(19): clientId: 4 (as number: 4)
+Action.c(20): message: hi_9
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "13", "message": "hi_9"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3222 Wasted Time: 0,0938).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 36.
+Starting iteration 37.
+Starting action Action.
+Action.c(19): clientId: 13 (as number: 13)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "2", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3074 Wasted Time: 0.0974).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 37.
+Starting iteration 38.
+Starting action Action.
+Action.c(19): clientId: 16 (as number: 16)
+Action.c(20): message: hi_7
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "2", "message": "hi_7"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3208 Wasted Time: 0.1021).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 38.
+Starting iteration 39.
+Starting action Action.
+Action.c(19): clientId: 19 (as number: 19)
+Action.c(20): message: hi_4
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "12", "message": "hi_4"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3241 Wasted Time: 0.1005).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 39.
+Starting iteration 40.
+Starting action Action.
+Action.c(19): clientId: 15 (as number: 15)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "3", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3368 Wasted Time: 0.1078).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 40.
+Starting iteration 41.
+Starting action Action.
+Action.c(19): clientId: 17 (as number: 17)
+Action.c(20): message: hi_7
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "12", "message": "hi_7"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3215 Wasted Time: 0,1090).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 41.
+Starting iteration 42.
+Starting action Action.
+Action.c(19): clientId: 15 (as number: 15)
+Action.c(20): message: hi_7
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "5", "message": "hi_7"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3212 Wasted Time: 0,1115).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 42.
+Starting iteration 43.
+Starting action Action.
+Action.c(19): clientId: 9 (as number: 9)
+Action.c(20): message: hi_7
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "3", "message": "hi_7"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3353 Wasted Time: 0.1119).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 43.
+Starting iteration 44.
+Starting action Action.
+Action.c(19): clientId: 13 (as number: 13)
+Action.c(20): message: hi_1
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "16", "message": "hi_1"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3403 Wasted Time: 0.1146).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 44.
+Starting iteration 45.
+Starting action Action.
+Action.c(19): clientId: 6 (as number: 6)
+Action.c(20): message: hi_4
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "15", "message": "hi_4"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3376 Wasted Time: 0,1177).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 45.
+Starting iteration 46.
+Starting action Action.
+Action.c(19): clientId: 15 (as number: 15)
+Action.c(20): message: hi_8
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "10", "message": "hi_8"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3514 Wasted Time: 0,1251).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 46.
+Starting iteration 47.
+Starting action Action.
+Action.c(19): clientId: 14 (as number: 14)
+Action.c(20): message: hi_3
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "14", "message": "hi_3"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3526 Wasted Time: 0.1291).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 47.
+Starting iteration 48.
+Starting action Action.
+Action.c(19): clientId: 18 (as number: 18)
+Action.c(20): message: hi_4
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "8", "message": "hi_4"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3534 Wasted Time: 0,1338).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 48.
+Starting iteration 49.
+Starting action Action.
+Action.c(19): clientId: 12 (as number: 12)
+Action.c(20): message: hi_6
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "15", "message": "hi_6"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 81 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message sent to Kafka without enrichment"}
+Action.c(57): Request successful.
+Action.c(64): Message was sent to Kafka without enrichment.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0.3697 Wasted Time: 0.1335).
+Action.c(82): Selected Kafka topic: raw-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic raw-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 49.
+Starting iteration 50.
+Starting action Action.
+Action.c(19): clientId: 7 (as number: 7)
+Action.c(20): message: hi_3
+Action.c(23): Notify: Transaction "Send_Message" started.
+Action.c(29): Sending request with body: {"clientId": "14", "message": "hi_3"}
+Action.c(32): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(32): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(35): web_custom_request("send_message") started  	[MsgId: MMSG-26355]
+Action.c(35): web_custom_request("send_message") was successful, 75 body bytes, 162 header bytes, 11 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(52): Response from service: {"status":"success","enrichedMessage":"Message enriched and sent to Kafka"}
+Action.c(57): Request successful.
+Action.c(61): Message was enriched and sent to Kafka.
+Action.c(71): Notify: Transaction "Send_Message" ended with a "Pass" status (Duration: 0,3379 Wasted Time: 0,1295).
+Action.c(82): Selected Kafka topic: enriched-messages-topic
+Action.c(88): Executing Kafka command: kafka-console-consumer --bootstrap-server localhost:9092 --topic enriched-messages-topic --max-messages 1 --timeout-ms 5000
+Action.c(94): Kafka command executed successfully.
+Ending action Action.
+Ending iteration 50.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
